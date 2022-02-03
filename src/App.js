@@ -1,25 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+// theme and colors
+import { createTheme, ThemeProvider } from '@mui/material/styles';
+
+import MenuBar from "./Components/Navigation/MenuBar";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider theme={theme}>
+      <div className="App">
+        <header>
+          <MenuBar />
+        </header>
+      </div>
+    </ThemeProvider>
+
   );
 }
+
+const theme = createTheme({
+  palette: {
+    primary: {
+      main: '#054A29',
+    },
+    secondary: {
+      main: '#11cb5f',
+    },
+  },
+  typography: {
+    allVariants: {
+      color: '#03331c'
+    }
+  }
+});
+
+
 
 export default App;
