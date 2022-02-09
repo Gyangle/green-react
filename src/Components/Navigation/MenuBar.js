@@ -1,6 +1,7 @@
 import * as React from 'react';
-import {AppBar, Box, Toolbar, IconButton, Typography, Menu, Container, Avatar, Button, Tooltip, MenuItem } from "@mui/material";
+import {AppBar, Box, Toolbar, IconButton, Typography, Menu, Container, Avatar, Button, Tooltip, MenuItem, Grid } from "@mui/material";
 import MenuIcon from '@mui/icons-material/Menu';
+import navLogo from '../../images/logo/navLogo.png'
 
 const pages = ['Find Gifts', 'Calendar', 'About Us'];
 const settings = ['Profile', 'Gift List', 'Dashboard', 'Logout'];
@@ -28,15 +29,9 @@ export default function MenuBar() {
     <AppBar position="static" color="inherit">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <Typography
-            variant="h5"
-            noWrap
-            component="div"
-            sx={{ mr: 2, display: { xs: 'none', md: 'flex' } }}
-          >
-            Green
-          </Typography>
-
+          <Grid sx={{ mr: 2, display: { xs: 'none', md: 'flex' } }}>
+            <img src={navLogo} alt="logo" />
+          </Grid>
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
             <IconButton
               size="large"
@@ -73,14 +68,9 @@ export default function MenuBar() {
               ))}
             </Menu>
           </Box>
-          <Typography
-            variant="h6"
-            noWrap
-            component="div"
-            sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}
-          >
-            Green
-          </Typography>
+          <Grid sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
+            <img src={navLogo} alt="logo" />
+          </Grid>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (
               <Button
