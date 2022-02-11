@@ -1,7 +1,8 @@
 import * as React from 'react';
 import {AppBar, Box, Toolbar, IconButton, Typography, Menu, Container, Avatar, Button, Tooltip, MenuItem, Grid } from "@mui/material";
 import MenuIcon from '@mui/icons-material/Menu';
-import navLogo from '../../images/logo/navLogo.png'
+import navLogo from '../../images/logo/navLogo.png';
+
 
 const pages = ['Find Gifts', 'Calendar', 'About Us'];
 const settings = ['Profile', 'Gift List', 'Dashboard', 'Logout'];

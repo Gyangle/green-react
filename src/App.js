@@ -1,16 +1,19 @@
 // theme and colors
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 
+// components
 import MenuBar from "./Components/Navigation/MenuBar";
+import HomePage from './Components/Home/HomePage';
 
 function App() {
   return (
     <ThemeProvider theme={theme}>
-      <div className="App">
+      <>
         <header>
           <MenuBar />
         </header>
-      </div>
+        <HomePage />
+      </>
     </ThemeProvider>
 
   );
