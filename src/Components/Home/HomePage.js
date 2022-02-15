@@ -40,7 +40,7 @@ export default function HomePage() {
             space={3}
             sx={{height: "20vh", mt: "10vh"}}
           >
-            <Typography variant="h2" component="div" gutterBottom>
+            <Typography variant="h2" component="div">
               Send Love, Your Way.
             </Typography>
             <Button size="large" variant="outlined">Start</Button>
@@ -82,7 +82,7 @@ function QuoteWidget() {
     >
     <img src={forwardQuote} alt="Forward quote mark" style={styles.forwardQuote} />
     <img src={backwardQuote} alt="Backward quote mark" style={styles.backwadQuote} />
-    <Typography variant="h4" component="div" gutterBottom style={styles.quoteStyles}>
+    <Typography variant="h4" component="div" style={styles.quoteStyles}>
       Green apply AI power to pick creative, unique 
       gifts and experiences for you & your loved ones.
     </Typography>
@@ -109,7 +109,7 @@ function SpecialsWidget() {
         />
         </CardActionArea>
         <CardContent>
-        <Typography variant="h5" component="div" gutterBottom sx={{textAlign: 'center'}} >
+        <Typography variant="h5" component="div" sx={{textAlign: 'center'}} >
         Spring Festival Special
         </Typography>
         </CardContent>
@@ -125,7 +125,7 @@ function SpecialsWidget() {
         />
         </CardActionArea>
         <CardContent>
-        <Typography variant="h5" component="div" gutterBottom sx={{textAlign: 'center'}} >
+        <Typography variant="h5" component="div" sx={{textAlign: 'center'}} >
           Valentine Special
         </Typography>
         </CardContent>
