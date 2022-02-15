@@ -1,9 +1,11 @@
 import * as React from 'react';
-import { Stack, Button, Typography, Box } from '@mui/material';
+import { Stack, Button, Typography, Box, Card, CardActionArea, CardContent, CardMedia } from '@mui/material';
 import startBackGround from '../../images/homePage/startBackGround.png';
 import outlineLogo from '../../images/logo/outlineLogo.png';
 import forwardQuote from '../../images/homePage/forwardQuote.png';
 import backwardQuote from '../../images/homePage/backwardQuote.png';
+import springFestival from '../../images/homePage/springFestival.png';
+import valentine from '../../images/homePage/valentine.png';
 
 export default function HomePage() {
   const styles = {
@@ -46,6 +48,7 @@ export default function HomePage() {
         </Stack>
       </Box>
       <QuoteWidget />
+      <SpecialsWidget />
     </>
   )
 }
@@ -84,5 +87,49 @@ function QuoteWidget() {
       gifts and experiences for you & your loved ones.
     </Typography>
     </Box>
+  )
+}
+
+function SpecialsWidget() {
+  return (
+    <Stack
+      direction="row"
+      justifyContent="space-around"
+      alignItems="center"
+      spacing={0}
+      height={700}
+    >  
+      <Card sx={{ maxWidth: 400 }}>
+        <CardActionArea>
+        <CardMedia 
+          component="img"
+          height="400"
+          image={springFestival}
+          alt="spring festival gifts"
+        />
+        </CardActionArea>
+        <CardContent>
+        <Typography variant="h5" component="div" gutterBottom sx={{textAlign: 'center'}} >
+        Spring Festival Special
+        </Typography>
+        </CardContent>
+      </Card>
+
+      <Card sx={{ maxWidth: 400 }}>
+        <CardActionArea>
+        <CardMedia 
+          component="img"
+          height="400"
+          image={valentine}
+          alt="valentine gifts"
+        />
+        </CardActionArea>
+        <CardContent>
+        <Typography variant="h5" component="div" gutterBottom sx={{textAlign: 'center'}} >
+          Valentine Special
+        </Typography>
+        </CardContent>
+      </Card>
+    </Stack>
   )
 }
