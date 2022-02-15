@@ -31,7 +31,8 @@ const theme = createTheme({
   typography: {
     allVariants: {
       color: '#03331c'
-    }
+    },
+    fontFamily: [`"Lora", "Roboto", "Helvetica", "Arial", sans-serif`]
   }
 });
 

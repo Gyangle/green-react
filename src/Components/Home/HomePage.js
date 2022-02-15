@@ -25,7 +25,7 @@ export default function HomePage() {
           spacing={3}
           sx={{height: "inherit"}}
         > 
-          <Box sx={{mt: 20, mb: 10, width: 200}}>
+          <Box sx={{mt: "10vh", mb: "10vh"}}>
             <img
               src={outlineLogo}
               alt="logo"
@@ -36,9 +36,9 @@ export default function HomePage() {
             justifyContent="space-between"
             alignItems="center"
             space={3}
-            sx={{height: 150, mt: 20}}
+            sx={{height: "20vh", mt: "10vh"}}
           >
-            <Typography variant="h3" component="div" gutterBottom>
+            <Typography variant="h2" component="div" gutterBottom>
               Send Love, Your Way.
             </Typography>
             <Button size="large" variant="outlined">Start</Button>
@@ -59,8 +59,15 @@ function QuoteWidget() {
     },
     backwadQuote: {
       position: 'absolute',
-      bottom: -240,
+      bottom: -270,
       right: 60,
+    },
+    quoteStyles: {
+      textAlign: 'center',
+      margin: 'auto',
+      width: '70%',
+      position: 'relative',
+      top: '40%',
     }
   };
   return (
@@ -68,14 +75,14 @@ function QuoteWidget() {
       sx={{
         height: 300,
         backgroundColor: '#F4F3EE',
-        '&:hover': {
-          backgroundColor: '#DFFF00',
-          opacity: 0.2,
-        },
       }}
     >
     <img src={forwardQuote} alt="Forward quote mark" style={styles.forwardQuote} />
     <img src={backwardQuote} alt="Backward quote mark" style={styles.backwadQuote} />
+    <Typography variant="h4" component="div" gutterBottom style={styles.quoteStyles}>
+      Green apply AI power to pick creative, unique 
+      gifts and experiences for you & your loved ones.
+    </Typography>
     </Box>
   )
 }
