@@ -4,6 +4,7 @@ import { createTheme, ThemeProvider } from '@mui/material/styles';
 // components
 import MenuBar from "./Components/Navigation/MenuBar";
 import HomePage from './Components/Home/HomePage';
+import Footer from './Components/Footer/Footer'
 
 function App() {
   return (
@@ -13,6 +14,9 @@ function App() {
           <MenuBar />
         </header>
         <HomePage />
+        <footer>
+          <Footer />
+        </footer>
       </>
     </ThemeProvider>
 

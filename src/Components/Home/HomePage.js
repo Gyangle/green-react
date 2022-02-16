@@ -126,6 +126,22 @@ function SpecialsWidget() {
         </CardActionArea>
         <CardContent>
         <Typography variant="h5" component="div" sx={{textAlign: 'center'}} >
+          Easter Special
+        </Typography>
+        </CardContent>
+      </Card>
+
+      <Card sx={{ maxWidth: 400 }}>
+        <CardActionArea>
+        <CardMedia 
+          component="img"
+          height="400"
+          image={valentine}
+          alt="valentine gifts"
+        />
+        </CardActionArea>
+        <CardContent>
+        <Typography variant="h5" component="div" sx={{textAlign: 'center'}} >
           Valentine Special
         </Typography>
         </CardContent>
