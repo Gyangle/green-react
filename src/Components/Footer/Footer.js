@@ -10,7 +10,7 @@ function Copyright() {
     <Typography variant="body2" color="text.secondary">
       {'Copyright © '}
       <Link color="inherit" href="https://mui.com/">
-        Green
+        Cele
       </Link>{' '}
       {new Date().getFullYear()}
       {'.'}
@@ -88,7 +88,7 @@ export default function Footer() {
               Contacts
             </Typography>
             <Typography>
-              hello@green.com
+              hello@cele.com
             </Typography>
             <Typography>
               +1 900 750 858

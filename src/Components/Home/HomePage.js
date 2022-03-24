@@ -83,7 +83,7 @@ function QuoteWidget() {
     <img src={forwardQuote} alt="Forward quote mark" style={styles.forwardQuote} />
     <img src={backwardQuote} alt="Backward quote mark" style={styles.backwadQuote} />
     <Typography variant="h4" component="div" style={styles.quoteStyles}>
-      Green apply AI power to pick creative, unique 
+      Cele apply AI power to pick creative, unique 
       gifts and experiences for you & your loved ones.
     </Typography>
     </Box>

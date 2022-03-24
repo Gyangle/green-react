@@ -4,23 +4,44 @@ import { createTheme, ThemeProvider } from '@mui/material/styles';
 // components
 import MenuBar from "./Components/Navigation/MenuBar";
 import HomePage from './Components/Home/HomePage';
-import Footer from './Components/Footer/Footer'
+import Footer from './Components/Footer/Footer';
+import AboutUs from './Components/AboutUs/AboutUs';
+
+import { Routes, Route } from "react-router-dom";
 
 function App() {
   return (
     <ThemeProvider theme={theme}>
       <>
-        <header>
-          <MenuBar />
-        </header>
-        <HomePage />
-        <footer>
-          <Footer />
-        </footer>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="about" element={<About />} />
+        </Routes>
+        
       </>
     </ThemeProvider>
 
   );
+}
+
+function Home() {
+  return (
+    <>
+      <MenuBar />
+      <HomePage />
+      <Footer />
+    </>
+  )
+}
+
+function About() {
+  return (
+    <>
+      <MenuBar />
+      <AboutUs />
+      <Footer />
+    </>
+  )
 }
 
 const theme = createTheme({
@@ -39,7 +60,5 @@ const theme = createTheme({
     fontFamily: [`"Lora", "Roboto", "Helvetica", "Arial", sans-serif`]
   }
 });
-
-
 
 export default App;
