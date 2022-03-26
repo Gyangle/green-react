@@ -64,7 +64,7 @@ export default function MenuBar() {
                 }}
               >
                 {pages.map((page) => (
-                  <Link key={page.label} to={page.path}>
+                  <Link key={page.label} to={page.path} style={{ textDecoration: 'none' }}>
                     <MenuItem onClick={handleCloseNavMenu}>
                       <Typography textAlign="center">{page.label}</Typography>
                     </MenuItem>
@@ -77,7 +77,7 @@ export default function MenuBar() {
             </Grid>
             <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
               {pages.map((page) => (
-                <Link key={page.label} to={page.path}>
+                <Link key={page.label} to={page.path} style={{ textDecoration: 'none' }}>
                   <Button
                     size="large"
                     onClick={handleCloseNavMenu}
